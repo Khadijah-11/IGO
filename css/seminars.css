@@ -110,9 +110,8 @@ nav ul li a.active {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1630px;
     margin: 0 auto;
-    padding: 2em;
+    padding: 1em;
 }
 
 .seminars-heading {
@@ -123,15 +122,21 @@ nav ul li a.active {
     width: 100%;
     padding-left: 1em;
 }
+.seminars-text-content a.email-link {
+    color: grey;
+    text-decoration: underline;
+}
+
 
 .seminars-text-content {
     flex: 1;
-    padding-left: 1em;
-    line-height: 1.8;
+    padding-left: 2em;
+    line-height: 2;
+    margin-right: 10em;
 }
 
 .seminars-text-content p {
-    margin-bottom: 1.5em;
+    margin-bottom: 2.5em;
 }
 
 .seminars-image-content {
@@ -143,9 +148,53 @@ nav ul li a.active {
     width: 90%;
     height: auto;
     object-fit: cover;
-    margin-top: 0.5em;
-HEAD
+    margin-top: 4em;
+
+}
+/**/
+
+.seminars-second-section {
+    padding: 2em 0;
+    text-align: center;
 }
 
+.seminars-second-heading {
+    font-size: 4em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.seminars-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seminar-item {
+    padding: 1.5em;
+    border-radius: 8px;
+    
+}
+
+.seminar-date {
+    font-weight: bold;
+    margin-bottom: 2em;
+    font-size: 1.8em;
+}
+
+.seminar-location {
+    font-style: italic;
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.seminar-topic {
+    line-height: 1.6;
+    font-size: 1.2em;
+    text-align: center;
+}
 
 
