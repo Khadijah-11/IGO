@@ -1,0 +1,210 @@
+
+.main-header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    color: #fff;
+    padding: 1em 0;
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+.main-header.scrolled {
+    background-color: #141414;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 90px;
+}
+
+nav {
+    flex: 1;
+    text-align: right; 
+    padding-right: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.submenu ul {
+    display: none;
+    position: absolute;
+    background: white;
+    list-style: none;
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
+    top: 100%;
+    right: -1em;
+    min-width: 200px;
+}
+
+
+nav ul li a.active {
+    border-bottom: 2px solid #fff;
+}
+.submenu:hover ul {
+    display: block;
+}
+
+.submenu ul li {
+    margin: 0;
+}
+
+.submenu ul a {
+    color: black;
+}
+.submenu ul a:hover {
+    border-bottom: 2px solid #000;
+}
+.submenu ul a.active {
+    border-bottom: 2px solid #000;
+}
+
+.first-section {
+    background-image: url('../images/Fotolia.jpg');
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    align-items: flex-end; 
+    padding-left: 2em; 
+    height: 300px; 
+    box-sizing: border-box; 
+    position: relative; 
+}
+
+.first-section .content {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-weight: 400;
+    padding-bottom: 1em; 
+    position: absolute; 
+    bottom: 0; 
+    left: 2em; 
+    color: white; 
+}
+
+.second-section {
+    background-color: #fff;
+    padding: 2em 0;
+}
+
+.second-section .second-section-container {
+    display: flex;
+    padding: 0 2em;
+    max-width: 1600px;
+    width: 100%;
+}
+
+.second-section .left-content {
+    flex: 1;
+    margin-right: 3em;
+}
+
+.second-section .left-content h1 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+.second-section .left-content p {
+    font-size: 1.5em;
+    margin-bottom: 0;
+    
+}
+
+.second-section .right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-section .right-content .content-box {
+    padding: 2em;
+    margin-right: 3em;
+    width: 100%;
+    max-width: 600px;
+    
+}
+
+.second-section .right-content p {
+    margin-bottom: 1em;
+    line-height: 1.8;
+}
+.third-section {
+    background-color: #f0f0f0; 
+    padding: 2em 0 6em;
+}
+
+.third-section .third-section-container {
+    display: flex;
+    padding: 0 2em;
+    max-width: 1600px;
+    width: 100%;
+}
+
+.third-section .third-left-content {
+    flex: 1;
+    margin-right: 2em;
+}
+
+.third-section .third-left-content h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.third-section .third-left-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.third-section .third-right-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section .white-box {
+    background-color: #fff;
+    padding: 1.5em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    text-align: left;
+}
+
+.third-section .white-box p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+

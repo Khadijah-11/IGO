@@ -1,0 +1,605 @@
+body{
+    background-color: white;
+}
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    color: #000000;
+    padding: 1em 0;
+    transition: background 0.3s;
+    z-index: 1000;
+}
+
+.main-header.scrolled {
+    background-color: #141414;
+    color: #ffffff;
+}
+.main-header.scrolled nav ul li a {
+    color: #ffffff; 
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 90px;
+}
+
+nav {
+    flex: 1;
+    text-align: right; 
+    padding-right: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+    position: relative;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.submenu ul {
+    display: none;
+    position: absolute;
+    background: white;
+    color: #000000;
+    list-style: none;
+    padding: 0.5em 1em;
+    border: 1px solid #ddd;
+    top: 100%;
+    right: -1em;
+    min-width: 200px;
+}
+
+
+nav ul li a.active {
+    border-bottom: 2px solid #000000;
+}
+.submenu:hover ul {
+    display: block;
+}
+
+.submenu ul li {
+    margin: 0;
+}
+
+.submenu ul a {
+    color: black;
+}
+.submenu ul a:hover {
+    border-bottom: 2px solid #000;
+}
+.submenu ul a.active {
+    border-bottom: 2px solid #000;
+}
+.section-wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2em; 
+}
+
+.expertise-header {
+    position: relative;
+    width: 100%;
+    height: 60vh; 
+    margin-top: 80px; 
+}
+
+.expertise-header .wide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    object-position: center; 
+}
+
+.expertise-header .header-title {
+    position: absolute;
+    top: 30%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5em; 
+    text-align: center;
+    font-weight: 500;
+    z-index: 10;
+}
+
+
+.expertise-content .experties-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0;
+}
+
+.expertise-content .text-content {
+    flex: 1;
+    padding-right: 2em;
+    line-height: 1.8;
+}
+
+.expertise-content .image-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.expertise-content .image-grid .wide-image {
+    grid-column: 1 / -1;
+    height: 200px; 
+    object-fit: cover;
+    object-position: center; 
+}
+
+.expertise-content .grid-images-small {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.expertise-content .grid-image {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+/* experties analysis */
+.expertise-analysis-section {
+    background-color: #f0f0f0; 
+    padding: 2em 2em;
+    width: 1630px;
+    margin: 0 auto;
+    min-height: 800px;
+}
+
+
+.analysis-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
+
+.analysis-text-content {
+    flex: 1;
+    padding-right: 2em;
+    line-height: 1.8;
+}
+
+.analysis-text-content h2 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+.analysis-text-content p {
+    margin-bottom: 1.5em; 
+}
+.analysis-image-content {
+    flex: 1;
+    margin-top: 7em;
+}
+
+.analysis-image-content img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-left: 3em;
+}
+/* renewable energy */
+.renewable-header {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    margin-top: 80px;
+}
+
+.renewable-header .renewable-wide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    object-position: center;
+}
+
+.renewable-header .renewable-header-title {
+    position: absolute;
+    top: 20%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 400;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.renewable-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2em;
+}
+
+.renewable-text-column {
+    flex: 1;
+    padding: 0 2em;
+    line-height: 1.8;
+}
+
+.renewable-text-column p {
+    margin-bottom: 1.5em; 
+}
+/*surtension*/
+.surtension-analysis-section {
+    background-color: #f0f0f0;
+    padding: 2em 2em;
+    width: 1630px;
+    margin: 0 auto;
+    min-height: 600px;
+}
+
+.surtension-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.surtension-text-content {
+    flex: 1;
+    padding-left: 2em;
+    line-height: 1.8;
+    margin-top: 5em;
+}
+
+.surtension-text-content p {
+    margin-bottom: 1.5em;
+}
+
+.surtension-image-content {
+    flex: 1;
+    margin-top: 0.5em;
+}
+
+.surtension-image-content h2 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+
+.surtension-image-content img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 1em;
+}
+/* industrie electronics */
+
+.industrie-electronics-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+}
+
+.industrie-title-and-images {
+    flex: 1;
+    padding-right: 2em;
+}
+
+.industrie-title-and-images h2 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+.industrie-image-grid {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 3em;
+    margin-left: 1em;
+}
+
+.industrie-image-grid img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+    margin-left: 2em;
+}
+
+.industrie-text-content {
+    flex: 1;
+    line-height: 1.8;
+    margin-top: 7em;
+    margin-right: 4em;
+}
+
+.industrie-text-content p {
+    margin-bottom: 1.5em;
+    
+}
+/* medical-equipment */
+.medical-equipment-analysis-section {
+    background-color: #f0f0f0;
+    padding: 2em;
+    width: 1630px;
+    margin: 0 auto;
+    min-height: 600px;
+    margin-top: 8em;
+}
+
+.medical-equipment-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.medical-equipment-text-content {
+    flex: 1;
+    padding-left: 1em;
+    line-height: 1.8;
+    margin-top: 8em;
+    margin-right: 4em;
+}
+
+.medical-equipment-text-content p {
+    margin-bottom: 1.5em;
+}
+
+.medical-equipment-image-content {
+    flex: 1;
+    margin-top: 0.5em;
+}
+
+.medical-equipment-image-content h2 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+
+.medical-equipment-image-content img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 1em;
+}
+/*q-elements*/
+.q-elements-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8em;
+    
+}
+
+.q-elements-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.q-elements-header h2 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.q-elements-header img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 2em;
+}
+
+.q-elements-text-content {
+    margin-top: 1.5em;
+    line-height: 1.8;
+    margin-right: 2em;
+}
+
+.q-elements-text-content p {
+    margin-bottom: 1.5em;
+}
+/*lithium-battery*/
+.lithium-battery-fires-section {
+    background-color: #f0f0f0;
+    padding: 2em;
+    width: 1630px;
+    margin: 0 auto;
+    min-height: 600px;
+    margin-top: 8em;
+}
+
+.lithium-battery-fires-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.lithium-battery-fires-text-content {
+    flex: 1;
+    padding-left: 1em;
+    line-height: 1.8;
+    margin-top: 8em;
+    margin-right: 4em;
+}
+
+.lithium-battery-fires-text-content p {
+    margin-bottom: 1.5em;
+}
+
+.lithium-battery-fires-image-content {
+    flex: 1;
+    margin-top: 0.5em;
+}
+
+.lithium-battery-fires-image-content h2 {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+}
+
+.lithium-battery-fires-image-content img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 1em;
+}
+/*insurance-reports*/
+.insurance-reports-review-section {
+    margin-top: 8em;
+}
+
+.insurance-reports-review-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.insurance-reports-review-text-content {
+    flex: 1;
+    padding-left: 1em;
+    line-height: 1.8;
+    margin-top: 0.5em;
+    margin-right: 5em;
+}
+
+.insurance-reports-review-text-content p {
+    margin-bottom: 1.5em;
+}
+
+.insurance-reports-review-image-content {
+    flex: 1;
+    margin-top: 0.5em;
+}
+
+.insurance-reports-heading {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+    margin-left: 1.2em; 
+}
+
+.insurance-reports-review-image-content img {
+    width: 85%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 0.5em;
+    margin-left: 4em;
+}
+/* paragliding-accident */
+.paragliding-accident-analysis-section {
+    background-color: #f0f0f0;
+    padding: 2em;
+    width: 1630px;
+    margin: 0 auto;
+    min-height: 500px;
+    margin-top: 5em;
+}
+
+.paragliding-accident-heading {
+    font-size: 3em;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0.2em;
+}
+
+.paragliding-accident-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.paragliding-accident-text-content {
+    flex: 1;
+    padding-right: 1em;
+    line-height: 1.8;
+    margin-top: 0.5em;
+    margin-right: 3em;
+}
+
+.paragliding-accident-text-content .accident {
+    margin-bottom: 1.8em;
+}
+
+.paragliding-accident-image-content {
+    flex: 1;
+    margin-top: 0.5em;
+}
+
+.paragliding-accident-image-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 0.2em;
+    margin-left: 1em;
+}
+/* electric-bikes */
+.electric-bikes-scooters-accidents-section {
+    margin-top: 8em;
+    margin-bottom: 6em;
+}
+
+.electric-bikes-scooters-heading {
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 0.2em;
+    margin-left: 1.2em;
+    text-align: left;
+}
+
+.electric-bikes-scooters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.electric-bikes-scooters-image-content {
+    flex: 1;
+    margin-top: 0.5em;
+}
+
+.electric-bikes-scooters-image-content img {
+    width: 90%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 0.5em;
+    margin-left: 4em;
+}
+
+.electric-bikes-scooters-text-content {
+    flex: 1;
+    padding-left: 1em;
+    line-height: 1.8;
+    margin-top: 0.5em;
+    margin-right: 3em;
+    margin-left: 3em;
+}
+
+.electric-bikes-scooters-text-content p {
+    margin-bottom: 1.5em;
+}
+
+
