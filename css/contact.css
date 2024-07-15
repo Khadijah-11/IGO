@@ -50,7 +50,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -109,18 +109,22 @@ nav ul li a.active {
 .heading-wrapper {
     width: 100%;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     z-index: 1;
-    margin-top: 6em;
+    height: 50px;
+   
 
 }
 
 .heading-wrapper h2 {
     font-size: 3em;
     color: #fff;
+    font-weight: bold;
     white-space: nowrap;
     overflow: visible; 
+    margin-bottom: 0.2em;
 }
+
 
 .contact-section {
     padding: 2em;
@@ -128,11 +132,16 @@ nav ul li a.active {
     text-align: center;
     max-width: 800px;
     width: 100%;
-    margin-top: 2em;
+    margin-top: 0.5em;
     color: #fff;
     position: relative;
     z-index: 1; 
 }
+.contact-section .p1{
+    margin-bottom: 0.2em;
+    text-align: left;
+    margin-top: 0.2em;
+} 
 
 .contact-form {
     text-align: left;
@@ -154,9 +163,15 @@ nav ul li a.active {
 .form-group label {
     display: block;
     margin-bottom: 0.5em;
-    font-weight: bold;
+    font-weight: normal;
     color: #fff;
 }
+.not-bold {
+    font-weight: small;
+    color: #e5e7ea;
+   
+}
+
 
 .form-group input,
 .form-group textarea {
@@ -166,12 +181,19 @@ nav ul li a.active {
     border-radius: 4px;
     background-color: #fff;
     color: #000;
-    transition: background-color 0.3s, opacity 0.3s;
+    transition: background-color 0.3s, opacity 0.3s, box-shadow 0.3s;
+    outline: none;
+    
 }
 
 .form-group input:hover,
 .form-group textarea:hover {
     background-color: rgba(240, 240, 240, 0.5); 
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    background-color: rgba(240, 240, 240, 0.5);
+    box-shadow: 0 0 0 8px transparent, 0 0 0 6px white;
 }
 
 .form-group.full-width {
@@ -192,6 +214,7 @@ nav ul li a.active {
 }
 
 .submit-button:hover {
-    background-color: #707777;
+    background-color: rgba(70, 70, 70, 0.7);
+    color: #b3b3b3;
 }
 

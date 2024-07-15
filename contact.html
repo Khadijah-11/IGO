@@ -51,10 +51,12 @@
     <div class="page-container">
         <div class="heading-wrapper">
             <h2>Contactez-nous, où que vous soyez :</h2>
+            
         </div>
         <section class="contact-section">
+            <p class="p1">Name <span class="not-bold">(erforderlich)</span></p> 
             <form class="contact-form">
-                <!-- <p>Name (erforderlich)</p> -->
+                
                 <div class="form-group">
                     
                     <label for="firstname">Vorname </label>
@@ -65,17 +67,53 @@
                     <input type="text" id="lastname" name="lastname" required>
                 </div>
                 <div class="form-group full-width">
-                    <label for="email">E-Mail (erforderlich)</label>
+                    <label for="email">E-Mail <span class="not-bold">(erforderlich)</span></label>
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group full-width">
-                    <label for="message">Nachricht (erforderlich)</label>
+                    <label for="message">Nachricht <span class="not-bold">(erforderlich)</span></label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="submit-button">Senden</button>
             </form>
         </section>
     </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p class="footer-heading">IGO Ingenieurgesellschaft Opp mbH</p>
+                <p>Am Wissenschaftspark 16<br>
+                54296 Trier<br>
+                Germany</p>
+                <p>Email: <a href="mailto:mail@igo-technical.expert">mail@igo-technical.expert</a><br>
+                Tel.: +49 651 999 393 0</p>
+                <p>Created by <a href="#">Gruber4D</a></p>
+            </div>
+            <div class="footer-middle">
+                <p class="footer-heading">Branches</p>
+                <ul>
+                    <li>Luxembourg</li>
+                    <li>Portugal/Spain</li>
+                    <li>Morocco</li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p class="footer-heading">Projects</p>
+                <ul>
+                    <li><a href="#">Q-Element</a></li>
+                    <li><a href="#">Lightning-Report.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-essential">
+                <p class="footer-heading">Essential<br> Information</p>
+                <ul>
+                    <li><a href="#">Imprint</a></li>
+                    <li><a href="#">Data Protection</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
