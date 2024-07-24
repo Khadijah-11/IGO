@@ -54,7 +54,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.submenu ul {
+/* .submenu ul {
     display: none;
     position: absolute;
     background: white;
@@ -88,7 +88,7 @@ nav ul li a.active {
 
 .submenu ul a.active {
     border-bottom: 2px solid #000;
-}
+} */
 
 .page-container {
     background-image: url('../images/contact1.jpg');
@@ -104,6 +104,7 @@ nav ul li a.active {
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+    padding-top: 100px;
 }
 
 .heading-wrapper {
@@ -194,7 +195,8 @@ nav ul li a.active {
 .form-group input:focus,
 .form-group textarea:focus {
     background-color: rgba(240, 240, 240, 0.5);
-    box-shadow: 0 0 0 8px transparent, 0 0 0 2px white;
+    border: 4px solid transparent;
+    box-shadow: 0 0 0 2px white;
 }
 
 .form-group.full-width {

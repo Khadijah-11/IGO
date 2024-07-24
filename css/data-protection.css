@@ -98,103 +98,59 @@ nav ul li a.active {
     border-bottom: 2px solid #000;
 } */
 
-.seminars-section {
+.privacy-policy{
     padding: 2em 0;
     width: 100%;
-    margin: 0 auto;
     margin-top: 10em;
-
+    margin-bottom: 20em;
 }
-
-.seminars-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+.privacy-policy-container {
+    line-height: 1.6;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 1em;
+    padding: 0 2em; 
 }
 
-.seminars-heading {
+h1, h2, h3 {
+    color: #000000;
+}
+
+h1 {
     font-size: 3em;
-    font-weight: 400;
     margin-bottom: 1em;
     text-align: left;
-    width: 100%;
-    padding-left: 1em;
-}
-.seminars-text-content a.email-link {
-    color: grey;
-    text-decoration: underline;
 }
 
-
-.seminars-text-content {
-    flex: 1;
-    padding-left: 2em;
-    line-height: 2;
-    margin-right: 10em;
+h2 {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.seminars-text-content p {
-    margin-bottom: 2.5em;
+h3 {
+    font-size: 1em;
+    margin-top: 1.25em;
+    margin-bottom: 0.75em;
 }
 
-.seminars-image-content {
-    flex: 1;
-    padding-left: 1em;
-}
-
-.seminars-image-content img {
-    width: 90%;
-    height: auto;
-    object-fit: cover;
-    margin-top: 4em;
-
-}
-/**/
-
-.seminars-second-section {
-    padding: 2em 0;
-    text-align: center;
-}
-
-.seminars-second-heading {
-    font-size: 4em;
-    font-weight: 600;
+p {
     margin-bottom: 1em;
 }
 
-.seminars-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5em;
-    max-width: 1200px;
-    margin: 0 auto;
+ul {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
 }
 
-.seminar-item {
-    padding: 1.5em;
-    border-radius: 8px;
-    
-}
-
-.seminar-date {
-    font-weight: bold;
-    margin-bottom: 2em;
-    font-size: 1.8em;
-}
-
-.seminar-location {
-    font-style: italic;
+ul li {
     margin-bottom: 0.5em;
-    font-size: 1.5em;
-    text-align: center;
 }
 
-.seminar-topic {
-    line-height: 1.6;
-    font-size: 1.2em;
-    text-align: center;
+a {
+    color: #707070;
+    text-decoration: none;
 }
 
-
+a:hover {
+    text-decoration: underline;
+}

@@ -53,7 +53,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.submenu ul {
+/* .submenu ul {
     display: none;
     position: absolute;
     background: white;
@@ -85,7 +85,7 @@ nav ul li a.active {
 }
 .submenu ul a.active {
     border-bottom: 2px solid #000;
-}
+} */
 
 .first-section {
     background-image: url('../images/Fotolia.jpg');

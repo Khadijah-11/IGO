@@ -63,7 +63,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-.submenu ul {
+/* .submenu ul {
     display: none;
     position: absolute;
     background: white;
@@ -96,7 +96,7 @@ nav ul li a.active {
 }
 .submenu ul a.active {
     border-bottom: 2px solid #000;
-}
+} */
 .section-wrapper {
     max-width: 1600px;
     margin: 0 auto;
