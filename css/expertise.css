@@ -261,6 +261,7 @@ nav ul li a.active {
     width: 1630px;
     margin: 0 auto;
     min-height: 600px;
+    margin-top: 8em;
 }
 
 .surtension-container {
@@ -389,7 +390,7 @@ nav ul li a.active {
     margin-top: 1em;
 }
 /*q-elements*/
-.q-elements-section {
+/* .q-elements-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -425,10 +426,10 @@ nav ul li a.active {
 
 .q-elements-text-content p {
     margin-bottom: 1.5em;
-}
+} */
 /*lithium-battery*/
 .lithium-battery-fires-section {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding: 2em;
     width: 1630px;
     margin: 0 auto;
@@ -473,6 +474,11 @@ nav ul li a.active {
 }
 /*insurance-reports*/
 .insurance-reports-review-section {
+    background-color: #f0f0f0;
+    padding: 2em;
+    width: 1630px;
+    margin: 0 auto;
+    min-height: 600px;
     margin-top: 8em;
 }
 
@@ -503,7 +509,7 @@ nav ul li a.active {
     font-size: 3em;
     font-weight: 400;
     margin-bottom: 0.2em;
-    margin-left: 1.2em; 
+    margin-left: 0.2em; 
 }
 
 .insurance-reports-review-image-content img {
@@ -511,16 +517,17 @@ nav ul li a.active {
     height: auto;
     object-fit: cover;
     margin-top: 0.5em;
-    margin-left: 4em;
+    margin-left: 1em;
 }
 /* paragliding-accident */
 .paragliding-accident-analysis-section {
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     padding: 2em;
     width: 1630px;
     margin: 0 auto;
     min-height: 500px;
     margin-top: 5em;
+    margin-bottom: 6em;
 }
 
 .paragliding-accident-heading {
@@ -561,7 +568,7 @@ nav ul li a.active {
     margin-left: 1em;
 }
 /* electric-bikes */
-.electric-bikes-scooters-accidents-section {
+/* .electric-bikes-scooters-accidents-section {
     margin-top: 8em;
     margin-bottom: 6em;
 }
@@ -604,6 +611,6 @@ nav ul li a.active {
 
 .electric-bikes-scooters-text-content p {
     margin-bottom: 1.5em;
-}
+} */
 
 
