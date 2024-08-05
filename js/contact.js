@@ -10,7 +10,11 @@
   };
   
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  if (!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+} else {
+    firebase.app();
+}
   const db = firebase.firestore();
   
   document.getElementById('contact-form').addEventListener('submit', function(e) {
