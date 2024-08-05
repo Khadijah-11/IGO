@@ -63,40 +63,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* .submenu ul {
-    display: none;
-    position: absolute;
-    background: white;
-    color: #000000;
-    list-style: none;
-    padding: 0.5em 1em;
-    border: 1px solid #ddd;
-    top: 100%;
-    right: -1em;
-    min-width: 200px;
-}
-
-
-nav ul li a.active {
-    border-bottom: 2px solid #000000;
-}
-.submenu:hover ul {
-    display: block;
-}
-
-.submenu ul li {
-    margin: 0;
-}
-
-.submenu ul a {
-    color: black;
-}
-.submenu ul a:hover {
-    border-bottom: 2px solid #000;
-}
-.submenu ul a.active {
-    border-bottom: 2px solid #000;
-} */
 .section-wrapper {
     max-width: 1600px;
     margin: 0 auto;
